@@ -1,0 +1,282 @@
+/* All dimensions are in 'rem' and 'em', 
+equivalent pixel dimensions are commented below 
+for reference. */
+
+/* Root html element font-size is 16px. i.e, 1rem=16px */
+
+/* Font-sizes are in 'rem' and other dimensions say width, padding, margin etc. are in 'em' */
+
+/* Border box-css property. */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 2.4375em auto;
+    /* margin: 39px auto; */
+
+    font-family: "Inter";
+    max-width: 28.875em;
+    /* max-width: 462px */
+}
+
+.container {
+    margin: 0 3.6875em;
+    /* margin: 0 59px; */
+}
+
+header {
+    margin: 2.4375em 0 0 0;
+}
+
+header h1 {
+    display: flex;
+    flex-direction: row;
+}
+
+header h1:before,
+header h1:after {
+    content: "";
+    flex: 1 1;
+    border-bottom: 0.05625em solid #c8c8c8;
+    margin: auto;
+}
+
+header h1:before {
+    margin-right: 0.4em;
+}
+
+header h1:after {
+    margin-left: 0.4em;
+}
+
+hr {
+    margin: 0;
+}
+
+header h1 {
+    margin: 0;
+    color: #FF6B82;
+    font-size: 1.25rem;
+    /* font-size: 20px; */
+
+    font-weight: 600;
+    text-align: center;
+}
+
+main {
+    margin-top: 1.1875em;
+    /* margin-top: 19px; */
+}
+
+.box {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.25em 0.9375em;
+    border: 1px solid #c8c8c8;
+}
+
+/* Toggle function-start */
+
+.size_color--table {
+    display: none;
+}
+
+.size_color--table.active {
+    display: table;
+}
+
+.box.active {
+    background-color: #FFF9FA; /* Change background color when active */
+    border: 0.125em solid #FF6B82;
+}
+/* Toggle function-end */
+
+.standard_price {
+    margin: 0;
+}
+
+.box +.box {
+    margin-top: 1.1875em;
+    /* margin-top: 19px; */
+}
+
+.heading_unit {
+    margin: 0;
+    font-size: 0.875rem;
+    /* font-size: 14px; */
+
+    font-weight: 600;
+
+    margin-left: 1.7em;
+    /* margin-left: 27.2px; */
+}
+
+.standard_price {
+    margin-left: 3.12em;
+    /* margin-left: 49.92px; */
+
+    font-size: 0.75rem;
+    /* font-size: 12px; */
+
+    font-weight: 400;
+}
+
+.offer--percentage {
+    margin-left: 0.673125em;
+    /* margin-left: 10.77px; */
+
+    padding: 0 0.6875em;
+    font-size: 0.75rem;
+    font-weight: 400;
+    background-color: #FF6B82;
+    color: #ffffff;
+}
+
+.left_portion--content {
+    display: flex;
+    align-items: center;
+}
+
+.left_portion--content input {
+    margin: 0;
+}
+
+.size_color--table {
+    font-weight: 400;
+
+    margin-left: 2em;
+    /* margin-left: 49.92px;  */
+    margin-top: 0.805625rem;
+    /* margin-left: 12.89px;  */
+}
+
+.size_color--table .table_head {
+    font-size: 0.62125rem;
+    /* font-size: 9.94px; */
+}
+
+.size_color--table .table_row {
+    font-size: 0.565rem;
+    /* font-size: 9.04px; */
+}
+
+.select_option {
+    font-size: 0.678125rem;
+    /* font-size: 10.85px; */
+
+    background-color: #ffffff;
+    border-style: none;
+    border: 0.05625em solid #D9D9D9;
+    padding: 0.58125em 0.5em;
+}
+
+.select_option--size {
+    width: 6.08em;
+    /* width: 65.96px; */
+}
+
+.select_option--color {
+    width: 6.67em;
+    /* width: 72.36px; */
+}
+
+/* Right portion in a first box */
+.price {
+    font-weight: 500;
+    font-size: 0.90375rem;
+    /* font-size: 14.46px; */
+}
+
+.price--strike {
+    font-weight: 400;
+    font-size: 0.625rem;
+    /* font-size: 10px; */
+    color: #D9D9D9;
+}
+
+.price,
+.price--strike {
+    margin: 0;
+}
+
+/* Right portion in a second box */
+.right_portion--price {
+    position: relative;
+    top: -1.5em;
+    left: 1.485em;
+}
+
+.right_portion--most_popular {
+    background-color: #FF6B82;
+    color: #ffffff;
+    margin: 0;
+    font-size: 0.75rem;
+    /* font-size: 12px; */
+
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 0.5em 0.3em;
+    text-align: center;
+    position: relative;
+    top: -2.25em;
+    left: 0.85em;
+    border-radius: 0 0 0.25em 0.25em;
+}
+
+/* total_box */
+.total_box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.free_delivery {
+    color: #FF6B82;
+    font-weight: 500;
+    font-size: 0.875rem;
+}
+
+.total_price {
+    font-size: 0.875rem;
+    font-weight: 400;
+}
+
+/* add_to_cart-button */
+.add_to_cart {
+    background-color: #FF6B82;
+    color: #ffffff;
+    border-style: none;
+    font-size: 0.75rem;
+    /* font-size: 12px; */
+
+    font-weight: 500;
+    width: 28.3333em;
+    padding: 1em 0;
+    border-radius: 0.25em;
+}
+
+/* hover, focus properties for button and boxes */
+.box:focus,
+.box:hover,
+.add_to_cart:focus,
+.add_to_cart:hover {
+    cursor: pointer;
+}
+
+aside {
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* copyright */
+.copyright {
+    font-size: 0.75rem;
+    /* font-size: 12px; */
+
+    font-weight: 400;
+    font-style: italic;
+    color: #00000066;
+    margin-top: 0.25em;
+}

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Task</title>
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <!-- Header -->
+        <header>
+            <h1>YAY! It's BOGO</h1>
+        </header>
+
+        <main>
+            <!-- Container-boxes -->
+            <div>
+                <!-- Box-1 -->
+                <div class="box">
+                    <section class="left_portion">
+                        <section class="left_portion--content">
+                            <input type="radio">
+                            <h3 class="heading_unit">1 Unit</h3>
+                            <span class="offer--percentage">10% Off</span>
+                        </section>
+                        <p class="standard_price">Standard Price</p>
+
+                        <!-- Table-1 -->
+                        <table class="size_color--table">
+                            <tr class="table_head">
+                                <td></td>
+                                <td>Size</td>
+                                <td>Colour</td>
+                            </tr>
+                            <tr>
+                                <td class="table_row">#1</td>
+                                <td>
+                                    <select class="select_option select_option--size">
+                                        <option>S</option>
+                                    </select>
+                                </td>
+                                <td> 
+                                    <select class="select_option select_option--color">
+                                        <option>Black</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="table_row">#2</td>
+                                <td>
+                                    <select class="select_option select_option--size">
+                                        <option>M</option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <select class="select_option select_option--color">
+                                        <option>White</option>
+                                    </select>
+                                </td>
+                            </tr>
+                        </table>
+                    </section>
+                    <section class="right_portion">
+                        <p class="price">$10.00 USD</p>
+                        <s class="price--strike">$24.00 USD</s>
+                    </section>
+                </div>
+
+                <!-- Box-2 -->
+                <div class="box box-2">
+                    <section class="left_portion">
+                        <section class="left_portion--content">
+                            <input type="radio" id="box2-check">
+                            <h3 class="heading_unit">2 Unit</h3>
+                            <span class="offer--percentage">20% Off</span>
+                        </section>
+
+                        <!-- Table-2 -->
+                        <table class="size_color--table active">
+                            <tr class="table_head">
+                                <td></td>
+                                <td>Size</td>
+                                <td>Colour</td>
+                            </tr>
+                            <tr>
+                                <td class="table_row">#1</td>
+                                <td>
+                                    <select class="select_option select_option--size">
+                                        <option>S</option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <select class="select_option select_option--color">
+                                        <option>Black</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="table_row">#2</td>
+                                <td>
+                                    <select class="select_option select_option--size">
+                                        <option>M</option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <select class="select_option select_option--color">
+                                        <option>White</option>
+                                    </select>
+                                </td>
+                            </tr>
+                        </table>
+                    </section>
+                    <section class="right_portion">
+                        <h3 class="right_portion--most_popular">Most popular</h3>
+                        <section class="right_portion--price">
+                            <p class="price">$18.00 USD</p>
+                            <s class="price--strike">$24.00 USD</s>
+                        </section>
+                    </section>
+                </div>
+
+                <!-- Box-3 -->
+                <div class="box">
+                    <section class="left_portion">
+                        <section class="left_portion--content">
+                            <input type="radio">
+                            <h3 class="heading_unit">3 Unit</h3>
+                            <span class="offer--percentage">30% Off</span>
+                        </section>
+
+                        <!-- Table-3 -->
+                        <table class="size_color--table">
+                            <tr class="table_head">
+                                <td></td>
+                                <td>Size</td>
+                                <td>Colour</td>
+                            </tr>
+                            <tr>
+                                <td class="table_row">#1</td>
+                                <td>
+                                    <select class="select_option select_option--size">
+                                        <option>S</option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <select class="select_option select_option--color">
+                                        <option>Black</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="table_row">#2</td>
+                                <td>
+                                    <select class="select_option select_option--size">
+                                        <option>M</option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <select class="select_option select_option--color">
+                                        <option>White</option>
+                                    </select>
+                                </td>
+                            </tr>
+                        </table>
+                    </section>
+                    <section class="right_portion">
+                        <p class="price">$18.00 USD</p>
+                        <s class="price--strike">$24.00 USD</s>
+                    </section>
+                </div>
+            </div>
+
+            <!-- Total price-box -->
+            <div class="total_box">
+                <p class="free_delivery">Free delivery</p>
+                <p class="total_price">Total : $18.00 USD</p>
+            </div>
+
+            <!-- Add to cart-button -->
+            <button class="add_to_cart">+ Add to cart</button>
+
+            <!-- Copyright-text -->
+            <aside>
+                <p class="copyright">@ Powered by Pumper</p>
+            </aside>
+        </main>
+    </div>
+</body>
+<!-- Javascript file -->
+<script src="script.js"></script>
+
+</html>
